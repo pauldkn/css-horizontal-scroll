@@ -88,7 +88,6 @@ a {
   &:hover {
     cursor: pointer;
     text-decoration: underline;
-    // font-weight: bolder;
   }
 }
 
@@ -107,6 +106,9 @@ a {
   color: black;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
+  .logo a:hover {
+    text-decoration: none;
+  }
   a {
     font-size: 1.8rem;
     font-family: "Kaushan Script", cursive;
@@ -114,7 +116,6 @@ a {
   .links a {
     font-size: 1.5rem;
   }
-
   .links a:not(:first-of-type) {
     margin-left: 3rem;
   }
@@ -126,10 +127,17 @@ a {
     padding: 1rem;
     height: fit-content;
 
+    .logo {
+      margin-bottom: 1rem;
+    }
     .links {
       display: flex;
+      width: 100vw;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-around;
+    }
+    .links a:not(:first-of-type) {
+      margin-left: 0;
     }
   }
 }
@@ -142,8 +150,8 @@ a {
     .links a {
       font-size: 1.2rem;
     }
-    .links a:not(:first-of-type) {
-      margin-left: 5px;
-    }
+  }
+  p {
+    padding: 0 1rem
   }
 }
